@@ -1,2 +1,25 @@
 Netzwerkdokumentation Fragen interpretieren:
 
+ 1. 172.200.3.1/24
+ 2. 172.200.4.1/24
+ 3. VLAN-2
+ 4. 192.168.4.1
+ 5. 172.200.5.1/24
+ 6. 192.168.4.1
+ 7. Der Mitarbeiter bräuchte eine von den 3 IP's VPN-A VPN-B oder VPN-C je nachdem wo er arbeiten wird. 
+    Ebenso natürlich auch das Passwort und das Mitarbeiter login für seinen Firmen VPN.
+ 8. Es wurde von A. bisang installiert.
+ 9. Am 5. Januar 2014 wurde der AccessPoint im Bistro installiert.
+10. Netzwerk Connectivity und Troubleshooting würden davon betroffen sein als auch die Gerät Konfiguration. 
+    Ich würde versuchen A. Bisang anzustellen.
+11. Die letzen 2 sind nicht belegt. (also 2, soweit ich das richtig verstanden habe, dass man diese 2 brauchen kann)
+12. Port 24 im Layer 2 Switch sollte möglich sein.
+13. Man könnte den von einem Mitarbeiter nehmen der gerade nicht arbeitet oder sonst noch einen freien Port suchen wie E9/1, E8/2, E8/1.
+14. Man könnte die im Bistro fragen ob man einen von ihrnen Ports auslehnen darf wie E9/1, E8/2, E8/1 da es nur temporär ist und sie den
+    gerade nicht benutzen. Ebenso könnte man im schlimmsten Fall die Hardware upgraden was aber teuer ist,
+    wehsalb ich die erste Lösung empfehlen würde.
+15. 3 also 2 aber 1 Switch ist eine Stacked-Switch, dass heisst, dass sie so konfiguriert wurde, 
+    wie eine erweiterung, anstatt einer neunen Switch.
+16. Sie werden die Verbindungen der Kabel überprüfen, ob alles richtig eingesteckt wurde, als auch ob die Kabel vielleicht beschädigt sind.
+    Ebenso wird man wahrscheinlich noch die Konfiguration ihres Netzwerk überprüfen als auch die Firewall.
+17. Der Service Set Identifier kurz SSID, in Chur ist "ZyXEL NWA 1123-AC"
