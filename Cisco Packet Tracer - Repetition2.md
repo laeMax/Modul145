@@ -1,1 +1,75 @@
-Packet Tracer 
+Tasks:
+
+Answer the following questions:
+
+How many Fast Ethernet interfaces does the switch have?
+24.
+
+How many Gigabit Ethernet interfaces does the switch have?
+2
+
+What is the range of values shown for the vty lines?
+5
+
+Which command will display the current contents of non-volatile random-access memory (NVRAM)?
+show startup-config
+
+Why does the switch respond with “startup-config is not present?”
+because the switch has no config for the startup.
+
+
+Why is the login command required?
+To declare that the password is for the login.
+
+What is displayed for the enable secret password?
+enable secret 5 $1$mERr$ILwq/b7kc.7X/ejA4Aosn0
+
+Why is the enable secret password displayed differently from what we configured?
+Because its encrypted.
+
+
+When will this banner be displayed? banner motd "This is a secure system. Authorized Access Only!"
+
+When you try to access space.
+
+
+Why should every switch have a MOTD banner?
+Because then you know what the problem is like an explaination.
+
+What is the shortest, abbreviated version of the copy running-config startup-config command?
+copy run start
+
+Which command will display the contents of NVRAM?
+show run
+
+Are all the changes that were entered recorded in the file?
+no, only the recent ones while it was running
+
+
+Startup-config switch 2:
+
+S2#show run
+Building configuration...
+
+Current configuration : 1273 bytes
+!
+version 15.0
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+service password-encryption
+!
+hostname S2
+!
+!
+enable secret 5 $1$mERr$ILwq/b7kc.7X/ejA4Aosn0
+enable password 7 08221D0A0A49
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+--More--
+
