@@ -1,0 +1,17 @@
+1. If a PC in VLAN 10 sends a broadcast message, which devices receive it?
+Only VLAN 10 devices will receive it, including ports Fa0/11 to Fa0/17.
+
+2. If a PC in VLAN 20 sends a broadcast message, which devices receive it?
+Only VLAN 20 devices will receive it, including ports Fa0/18 to Fa0/24.
+
+3. If a PC in VLAN 30 sends a broadcast message, which devices receive it?
+Only VLAN 30 devices will receive it, including ports Fa0/6 to Fa0/10.
+
+4. What happens to a frame sent from a PC in VLAN 10 to a PC in VLAN 30?
+Frames from VLAN 10 to VLAN 30 are not forwarded within the switch unless a Layer 3 device (like a router) is present for inter-VLAN routing.
+
+5. In terms of ports, what are the collision domains on the switch?
+Each switch port represents a collision domain.
+
+6. In terms of ports, what are the broadcast domains on the switch?
+Each VLAN represents a broadcast domain.
