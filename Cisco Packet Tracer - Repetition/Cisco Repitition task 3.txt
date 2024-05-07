@@ -1,0 +1,14 @@
+Were you successful? Explain.
+
+No, because you cant ping yourself.
+
+
+
+Why do you enter the no shutdown command?
+this is made so that I can see the results, else it wouldnt come up and stay shut down like it says.
+
+
+Which command is used to save the configuration file in RAM to NVRAM?
+
+copy run start
+
