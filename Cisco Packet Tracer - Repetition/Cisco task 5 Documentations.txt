@@ -1,0 +1,31 @@
+Step 1:
+
+Initiate the process by selecting 172.16.31.2 and accessing the Command Prompt. Execute the command arp -d to effectively clear the ARP table. Transition into Simulation mode and input the command ping 172.16.31.3. Given the absence of the MAC address for the destination, the ICMP packet remains incomplete, prompting the computer to broadcast an ARP frame to ascertain the MAC address of the destination. Click on Capture/Forward once, directing the ARP PDU to Switch1 while the ICMP PDU momentarily disappears, awaiting the ARP reply. Examine the PDU and record the destination IP, which is 172.16.31.3. Confirm its presence in the table and note that Switch1 generated 3 copies of the PDU. Identify the IP address of the device that accepted the PDU as 172.16.31.3.
+
+Upon inspecting Layer 2 of the PDU, observe the transformation in source and destination MAC addresses as they are switched.
+
+Continue clicking Capture/Forward until the PDU returns to 172.16.31.2. Notice that Switch1 did not generate any copies during the ARP reply.
+
+Step 2:
+
+Upon the ICMP packet's reappearance, analyze the MAC addresses within the PDU, verifying alignment with their corresponding IP addresses. Transition back to Realtime, allowing the ping to successfully complete. Access 172.16.31.2 and input the arp –a command.
+
+Identify the IP address associated with the MAC address entry as 172.16.31.3.
+
+ARP requests are typically issued by end devices when the firewall is activated or when the targeted client lacks network connectivity.
+
+Step 3:
+
+From 172.16.31.2, execute the ping 172.16.31.4 command. Access 10.10.10.2 and open the Command Prompt. Enter the ping 10.10.10.3 command.
+
+Step 4:
+
+Navigate to Switch1 and access the CLI tab. Input the show mac-address-table command. Confirm if the entries correspond with those listed in the table above. Move to Switch0 and access the CLI tab. Execute the show mac-address-table command. Note any disparities in the entries. Multiple MAC addresses associated with one port could indicate a scenario where a computer and a virtual machine are connected.
+
+Step 5:
+
+Begin by selecting 172.16.31.2 and opening the Command Prompt. Execute the ping 10.10.10.1 command. Type arp –a.
+
+Identify the IP address of the new ARP table entry as 172.16.31.1. Clear the ARP table by executing arp -d and transition to Simulation mode.
+
+Repeat the ping to 10.10.10.1. Note the appearance of 5 PDUs. Click Capture/Forward and select the PDU now at Switch1. Identify the target destination IP address of the ARP request as "Broadcast," signifying the subsequent transmission to the router.
